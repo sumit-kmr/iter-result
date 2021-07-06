@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>ITER Result</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form id="login-form">
+        <h2>Login</h2>
+        <input type="text" name="username" id="input-username" placeholder="Username" required>
+        <input type="password" name="password" id="input-password" placeholder="Password" required>
+        <select name="select-sem" id="select-sem">
+            <option value="select_a_sem">Select a sem to see result</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        <input type="submit" name="login-btn" id="login-btn" class="btn-grad" value="LOGIN">
+        <div class="loader" id="loader">Loading...</div>
+        <p id="form-info"></p>
+    </form>
+
+    <div id="result-container">
+        <select id="select-sem-result">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>
+        <div class="loader" id="loader-result">Loading...</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Subject Code</th>
+                    <th>Subject Name</th>
+                    <th>Credits</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody id="result-body">
+
+            </tbody>
+        </table>
+        <p id="sgpa"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
